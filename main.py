@@ -45,7 +45,7 @@ class HashTable:
 
     def hash_function(self, key):
         # Multiplication method
-        A = 0.6180339887  # Approximate value of (√5 - 1) / 2
+        A = 0.6180339887
         return int(self.capacity * ((key * A) % 1))
 
     def resize(self, new_capacity):
