@@ -88,6 +88,7 @@ class HashTable:
                 return node.value
         return None
 
+
 # Example:
 hash_table = HashTable()
 hash_table.insert(5, 10)
