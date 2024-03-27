@@ -89,12 +89,13 @@ class HashTable:
         return None
 
 
-# Example:
+# Example inputs:
 hash_table = HashTable()
-hash_table.insert(5, 10)
-hash_table.insert(15, 20)
-hash_table.insert(25, 30)
-print(hash_table.search(5))  # Output: 10
-print(hash_table.search(15))  # Output: 20
-hash_table.remove(5)
-print(hash_table.search(5))  # Output: None
+hash_table.insert(1, 10)
+hash_table.insert(2, 20)
+hash_table.insert(3, 30)
+print(hash_table.search(1))
+print(hash_table.search(2))
+print(hash_table.search(3))
+hash_table.remove(3)
+print(hash_table.search(3))
