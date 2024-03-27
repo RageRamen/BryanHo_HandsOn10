@@ -45,8 +45,8 @@ class HashTable:
 
     def hash_function(self, key):
         # Multiplication method
-        A = 0.6180339887
-        return int(self.capacity * ((key * A) % 1))
+        mult = 0.6180339887
+        return int(self.capacity * ((key * mult) % 1))
 
     def resize(self, new_capacity):
         new_buckets = [DoublyLinkedList() for _ in range(new_capacity)]
