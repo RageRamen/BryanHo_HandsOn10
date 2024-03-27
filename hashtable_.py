@@ -91,11 +91,15 @@ class HashTable:
 
 # Example inputs:
 hash_table = HashTable()
+# Insert some key-value pairs
 hash_table.insert(1, 10)
 hash_table.insert(2, 20)
 hash_table.insert(3, 30)
+
+# Search for keys and print values
 print(hash_table.search(1))
 print(hash_table.search(2))
 print(hash_table.search(3))
+# Test remove function
 hash_table.remove(3)
 print(hash_table.search(3))
